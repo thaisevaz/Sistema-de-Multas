@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Multas</title>
+		</head>
+	<body>
+        <form action method="post">
+		
+				<center>
+					<h2>Cadastro de Infrações</h2>
+				</center>
+			<br>
+			<br>
+			<fieldset>
+				<legend>
+					<h4>Dados do Veículo</h4>
+				</legend>
+				<label>Placa:</label>
+					<input name="placa" type="text" placeholder="ABC-0000" size="8" maxlength="8">
+				<label id="renavam">Renavam:</label>
+					<input name="renavam" type="text" placeholder="12345678900" size="11" maxlength="11">
+				<label>Modelo:</label>
+					<select name="modelo" size="1">
+						<option value="C-100">C-100</option>
+						<option value="CB-300">CB-300</option>
+						<option value="CB-300R">CB-300R</option>
+						<option value="CG-125 FAN">CG-125 FAN</option>
+						<option value="CG-150">CG-150</option>
+					</select>
+				<label>Marca:</label>
+					<select name="marca" size="1">
+						<option value="HONDA">HONDA</option>
+						<option value="YAMAHA">YAMAHA</option>
+						<option value="KAWASAKI">KAWASAKI</option>
+					</select>
+				<label>Categoria:</label>
+					<select name="categoria" size="1">
+						<option value="MOTOCICLETA">MOTOCICLETA</option>
+						<option value="AUTOM/PASSAG">AUTOM/PASSAG</option>
+					</select>
+			</fieldset>
+			<br>
+			<br>
+			<fieldset>
+				<legend>
+					<h4>Dados do Proprietário</h4>
+				</legend>
+				<label>Nome:</label>
+					<input type="text" placeholder="Nome Completo" size="40">
+				<label>CPF/CNPJ:</label>
+					<input type="text" placeholder="123.456.789-00" size="18">
+				<label>Data de Compra:</label>
+					<input type="date">
+			</fieldset>
+			<br>
+			<br>
+			<fieldset>
+				<legend>
+					<h4>Infrações</h4>
+				</legend>
+				<table style="width:100%" border="1">
+					<tbody>
+						<tr>
+							<th>CÓDIGO</th>
+							<th>DESCRIÇÃO</th>
+							<th>PONTOS</th>
+							<th>VALOR</th>
+							<th>DATA</th>
+							<th>HORA</th>
+						</tr>
+						<tr>
+							<th>33</th>
+							<th>Estacionar em local proibido</th>
+							<th>5</th>
+							<th>R$ 85,90</th>
+							<th>01/06/2017</th>
+							<th>12:05</th>
+						</tr>
+						<tr>
+							<th>33</th>
+							<th>Estacionar em local proibido</th>
+							<th>5</th>
+							<th>R$ 85,96</th>
+							<th>05/06/2017</th>
+							<th>13:05</th>
+						</tr>
+						<tr>
+							<th>45</th>
+							<th>Dirigir acima do limite permitido</th>
+							<th>7</th>
+							<th>R$ 930,55</th>
+							<th>12/06/2017</th>
+							<th>09:05</th>
+						</tr>
+					</tbody>
+				</table>
+				<input type="button" name="adicionar" value="Adicionar">
+			</fieldset>
+			<input type="button" name="salvar" value="Salvar">
+			<input type="button" name="imprimir" value="Imprimir">
+			<input type="button" name="Cancelar" value="cancelar">
+		</form>
+	</body>
+</html>
